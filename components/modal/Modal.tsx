@@ -131,6 +131,7 @@ export interface ModalFuncProps {
   direction?: DirectionType;
   bodyStyle?: React.CSSProperties;
   closeIcon?: React.ReactNode;
+  footerStyle?: React.CSSProperties;
   modalRender?: (node: React.ReactNode) => React.ReactNode;
   focusTriggerAfterClose?: boolean;
 }
