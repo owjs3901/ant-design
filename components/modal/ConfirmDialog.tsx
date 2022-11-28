@@ -41,6 +41,7 @@ export function ConfirmContent(
     rootPrefixCls,
     type,
     okCancel,
+    footerStyle,
 
     // Legacy for static function usage
     locale: staticLocale,
@@ -107,7 +108,7 @@ export function ConfirmContent(
               )}
               <div className={`${confirmPrefixCls}-content`}>{props.content}</div>
             </div>
-            <div className={`${confirmPrefixCls}-btns`}>
+            <div style={footerStyle} className={`${confirmPrefixCls}-btns`}>
               {cancelButton}
               <ActionButton
                 type={okType}
